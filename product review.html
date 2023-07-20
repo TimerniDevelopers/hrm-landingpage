@@ -1,0 +1,805 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Time research & innovation</title>
+    <meta name="description" content="research">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--=== fontawesome-free-5.15.2 ===-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--=== Google Fonts ===-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <!--=== Bootstrap 5 ===-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--=== Owl carousel 2.3.4===-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!--=== Magnific PopUp ===-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--=== Main Css ===-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!--=== Style & Responsive  Css ===-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--=== Responsive Css ===-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .complement-page .post-c p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #231F20;
+        }
+        
+        .complement-page .feed-pro img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        
+        .complement-page .feed-pro h6 {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #231F20;
+        }
+        
+        .complement-page .feed-pro p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #BEC2C8;
+        }
+        
+        .complement-page .feedback-area .r-history {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #231F20;
+        }
+        
+        .complement-page .feedback-area .f-date {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #DADADA;
+        }
+        
+        .complement-page .feedback-area {
+            background: #FFFFFF;
+            border-bottom: 1px solid #BEC2C8;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
+        
+        .complement-page .feedback-area .feedback-con {
+            display: flex;
+            gap: 30px;
+            border-radius: 10px;
+            align-items: center;
+            flex: 1;
+        }
+        
+        .complement-page .feedback-area .feedback-con .f-review {
+            width: 100%;
+        }
+        
+        .complement-page .feedback-area .feedback-con .photo-review {
+            flex-basis: 220px;
+            text-align: end;
+        }
+        
+        .complement-page .feedback-area .feedback-con .f-star i {
+            color: #FFE820;
+            font-size: 19px;
+            margin-left: 5px;
+        }
+        
+        .complement-page .page-item .page-link.active {
+            background: var(--s-primary-color);
+            color: var(--white);
+        }
+        
+        .complement-page .page-item .page-link {
+            color: var(--text-color);
+            width: 40px;
+        }
+        
+        .complement-page .pagination .page-item .page-link.active {
+            background: var(--s-primary-color);
+            color: var(--white);
+        }
+        
+        .complement-page .complement-form label {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #312783;
+        }
+        
+        .complement-page .complement-form .form-control {
+            border: 1px solid #312783;
+            border-radius: 10px;
+        }
+        
+        .complement-page .complement-form .form-control:focus {
+            border: 1px solid #312783;
+        }
+        
+        .complement-page .complement-form i {
+            color: #DADADA;
+            margin-left: 5px;
+        }
+        
+        .complement-page .custom-file-upload input[type="file"] {
+            display: none;
+        }
+        
+        .complement-page .custom-file-upload .custom-file-upload1 {
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+        }
+        
+        .complement-page .custom-file-upload .custom-file-upload1 i {
+            position: absolute;
+            right: 0;
+            top: 3px;
+        }
+        
+        .complement-page .feedback-area .r-title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #312783;
+        }
+        
+        .complement-page .feedback-area .photo-caption>p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #231F20;
+            margin: 10px 0px;
+        }
+        
+        .complement-page .feedback-area .photo-caption>img {
+            max-width: 100%;
+            width: 190px;
+            height: 150px;
+        }
+        
+        @media (min-width: 320px) and (max-width: 991px) {
+            .complement-page .feedback-area {
+                padding: 15px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <header id="header">
+        <div class="header-area">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/f-logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="project.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item pb-d-0">
+                                <div class="dropdown">
+                                    <a href="#" class="nav-link  toggle-none dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        <span class="me-2">Career</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li class="nav-items">
+                                            <a class="nav-link dropdown-item" href="job.html">
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="ms-2">Job</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-items">
+                                            <a class="nav-link dropdown-item" href="ambassador.html">
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="ms-2">Ambassador</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-items">
+                                            <a class="nav-link dropdown-item" href="cv.html">
+
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="ms-2">CV Clinic</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex align-items-center">
+                            <div class="form-inline d-none d-lg-block">
+                                <a href="#" class="top-search">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </div>
+                            <div class="login">
+                                <a href="#">
+                                login
+                            </a>
+                            </div>
+                            <div class="dropdown d-none d-lg-block">
+                                <a href="#" class="flag-logo toggle-none dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/img/icons/flag.png" alt="flag">
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/img/icons/flag.png" alt="flag">
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <main class="complement-page">
+
+        <!-- Review start -->
+        <section class="complement prodct-review">
+            <div class="container">
+                <div class="page-heading">
+                    <div class="heading">
+                        <h2 class="s-heading">
+                            Complement
+                        </h2>
+                    </div>
+                </div>
+                <div class="post-c mt-35">
+                    <p>Post a Complement</p>
+                    <div class="complement-form mt-20 ">
+                        <form class="row no-gutter">
+                            <div class="col-md-6 mb-15">
+                                <label for="inputName" class="form-label">
+                                     <span>Company Name</span>
+                                 </label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Enter your company name">
+                            </div>
+                            <div class="col-md-6 mb-15">
+                                <label for="inputEmail" class="form-label">
+                                     <span>Enter your position</span>
+                                 </label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your positionl">
+                            </div>
+                            <div class="col-md-6 mb-15">
+                                <label for="inputName" class="form-label">
+                                     <span>Service Name</span>
+                                 </label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Enter your company name">
+                            </div>
+                            <div class="col-md-6 mb-15">
+                                <label for="inputEmail" class="form-label">
+                                     <span>Product Photo/span>
+                                 </label>
+                                <div class="custom-file-upload form-control">
+
+                                    <label for="file-upload" class="t14 custom-file-upload1 position-relative">
+                                        Upload your product photo 
+                                        <i class="fas fa-upload"></i>
+                                    </label>
+                                    <input id="file-upload" type="file">
+                                </div>
+                            </div>
+
+                            <div class="col-12 mb-15">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="inputText" class="form-label"><span>Leave a comment</span></label>
+                                    <div class="d-flex align-items-center  gap-3">
+                                        <label for="inputText" class="form-label">
+                                            <span>Give a Rating</span>
+                                        </label>
+                                        <div class="f-star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <textarea class="form-control" id="inputText" placeholder="Add your valuable comment" cols="30" rows="5"></textarea>
+                            </div>
+
+                            <div class="col-12 mb-15 text-end">
+                                <button type="submit" class="cmn-btn-blue w-25">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="mt-35">
+                    <div class="con-contetnt mb-35 ">
+                        <div class="heading text-center">
+                            <h2 class="s-heading text-capitalize">
+                                Recent Feedback
+                            </h2>
+                            <h4 class="s-sub-heading">
+                                We Are Always <span class="s-sub-c"> Wating For You</span>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="feedback-container">
+                        <div class="feedback-area mb-25">
+                            <div class="feed-pro text-center">
+                                <img src="assets/img/testimonal/testimomal-profile2.png" alt="testimonial2" loading="lazy">
+                                <div class="mt-1">
+                                    <h6>Arham Tabrar Sakib</h6>
+                                    <p>CEO, CST Group</p>
+                                </div>
+                            </div>
+                            <div class="feedback-con">
+                                <div class="f-review">
+                                    <p class="f-date">
+                                        NOV 04, 2021
+                                    </p>
+                                    <h5 class="r-title">
+                                        Service Name : Web Development
+                                    </h5>
+                                    <p class="r-history mt-10">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested..
+                                    </p>
+                                </div>
+                                <div class="photo-review">
+                                    <div class="f-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="photo-caption">
+                                        <p>Product Photo :</p>
+                                        <img src="assets/img/blog/post1.png" class="img-responsive">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="feedback-area mb-25">
+                            <div class="feed-pro text-center">
+                                <img src="assets/img/testimonal/testimomal-profile2.png" alt="testimonial2" loading="lazy">
+                                <div class="mt-1">
+                                    <h6>Arham Tabrar Sakib</h6>
+                                    <p>CEO, CST Group</p>
+                                </div>
+                            </div>
+                            <div class="feedback-con">
+                                <div class="f-review">
+                                    <p class="f-date">
+                                        NOV 04, 2021
+                                    </p>
+                                    <h5 class="r-title">
+                                        Service Name : Web Development
+                                    </h5>
+                                    <p class="r-history mt-10">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested..
+                                    </p>
+                                </div>
+                                <div class="photo-review">
+                                    <div class="f-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="photo-caption">
+                                        <p>Product Photo :</p>
+                                        <img src="assets/img/blog/post1.png" class="img-responsive">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="feedback-area mb-25">
+                            <div class="feed-pro text-center">
+                                <img src="assets/img/testimonal/testimomal-profile2.png" alt="testimonial2" loading="lazy">
+                                <div class="mt-1">
+                                    <h6>Arham Tabrar Sakib</h6>
+                                    <p>CEO, CST Group</p>
+                                </div>
+                            </div>
+                            <div class="feedback-con">
+                                <div class="f-review">
+                                    <p class="f-date">
+                                        NOV 04, 2021
+                                    </p>
+                                    <h5 class="r-title">
+                                        Service Name : Web Development
+                                    </h5>
+                                    <p class="r-history mt-10">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested..
+                                    </p>
+                                </div>
+                                <div class="photo-review">
+                                    <div class="f-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="photo-caption">
+                                        <p>Product Photo :</p>
+                                        <img src="assets/img/blog/post1.png" class="img-responsive">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="feedback-area mb-25">
+                            <div class="feed-pro text-center">
+                                <img src="assets/img/testimonal/testimomal-profile2.png" alt="testimonial2" loading="lazy">
+                                <div class="mt-1">
+                                    <h6>Arham Tabrar Sakib</h6>
+                                    <p>CEO, CST Group</p>
+                                </div>
+                            </div>
+                            <div class="feedback-con">
+                                <div class="f-review">
+                                    <p class="f-date">
+                                        NOV 04, 2021
+                                    </p>
+                                    <h5 class="r-title">
+                                        Service Name : Web Development
+                                    </h5>
+                                    <p class="r-history mt-10">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested..
+                                    </p>
+                                </div>
+                                <div class="photo-review">
+                                    <div class="f-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="photo-caption">
+                                        <p>Product Photo :</p>
+                                        <img src="assets/img/blog/post1.png" class="img-responsive">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="feedback-area mb-25">
+                            <div class="feed-pro text-center">
+                                <img src="assets/img/testimonal/testimomal-profile2.png" alt="testimonial2" loading="lazy">
+                                <div class="mt-1">
+                                    <h6>Arham Tabrar Sakib</h6>
+                                    <p>CEO, CST Group</p>
+                                </div>
+                            </div>
+                            <div class="feedback-con">
+                                <div class="f-review">
+                                    <p class="f-date">
+                                        NOV 04, 2021
+                                    </p>
+                                    <h5 class="r-title">
+                                        Service Name : Web Development
+                                    </h5>
+                                    <p class="r-history mt-10">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested..
+                                    </p>
+                                </div>
+                                <div class="photo-review">
+                                    <div class="f-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="photo-caption">
+                                        <p>Product Photo :</p>
+                                        <img src="assets/img/blog/post1.png" class="img-responsive">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="feedback-area mb-25">
+                            <div class="feed-pro text-center">
+                                <img src="assets/img/testimonal/testimomal-profile2.png" alt="testimonial2" loading="lazy">
+                                <div class="mt-1">
+                                    <h6>Arham Tabrar Sakib</h6>
+                                    <p>CEO, CST Group</p>
+                                </div>
+                            </div>
+                            <div class="feedback-con">
+                                <div class="f-review">
+                                    <p class="f-date">
+                                        NOV 04, 2021
+                                    </p>
+                                    <h5 class="r-title">
+                                        Service Name : Web Development
+                                    </h5>
+                                    <p class="r-history mt-10">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested..
+                                    </p>
+                                </div>
+                                <div class="photo-review">
+                                    <div class="f-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="photo-caption">
+                                        <p>Product Photo :</p>
+                                        <img src="assets/img/blog/post1.png" class="img-responsive">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-35 text-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">
+                                    <i class="fas fa-chevron-left"></i>
+                                  </span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+
+
+                                <li class="page-item">
+                                    <span>....</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">50</a></li>
+                                <li class="page-item">
+                                    <a class="page-link active" href="#" aria-label="Next">
+                                        <span aria-hidden="true">
+                                    <i class="fas fa-chevron-right"></i>
+                                  </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+    </main>
+    <!-- footer start -->
+
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-xl-4">
+                        <div class="footer-l">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/footer-logo.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="fo-con">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                            </div>
+                            <div class="f-s-icon">
+                                <a href="#" class="so-f">
+                                    <img src="assets/img/icons/facebook.png" alt="facebook">
+                                </a>
+                                <a href="#" class="so-t">
+                                    <img src="assets/img/icons/twitter.png" alt="twitter">
+                                </a>
+                                <a href="#" class="so-i">
+                                    <img src="assets/img/icons/linkedin.png" alt="linkedin">
+                                </a>
+                                <a href="#" class="so-l">
+                                    <img src="assets/img/icons/instragram.png" alt="instragram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-8">
+                        <div class="f-link">
+                            <div class="f-link-h">
+                                <h4 class="s-sub-heading">
+                                    <span class="s-sub-c">Pages </span>
+                                </h4>
+                                <ul class="mt-60">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="project.html">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="f-link-h">
+                                <h4 class="s-sub-heading">
+                                    <span class="s-sub-c">Useful Links </span>
+                                </h4>
+                                <ul class="mt-60">
+                                    <li>
+                                        <a href="privacy.html">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="condition.html">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="career.html">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="testimonial.html">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="f-link-h">
+                                <h4 class="s-sub-heading">
+                                    <span class="s-sub-c">Contact Info.</span>
+                                </h4>
+                                <div class="mt-60">
+                                    <div class="contact-info-f grid-2">
+                                        <div>
+                                            <div class="f-icons-f">
+                                                <img src="assets/img/icons/location.png" alt="location">
+                                                <p>
+                                                    <span>
+                                                Bangladesh <br>
+                                                East Rampura,Khilgaon<br>
+                                                Dhaka,1219</span>
+                                                </p>
+                                            </div>
+                                            <div class="f-icons-f">
+                                                <img src="assets/img/icons/phone-line.png" alt="phone-line">
+                                                <p>
+                                                    <a href="tel:+88 (0) 174 396 6200">+88 (0) 174 396 6200</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="f-icons-f">
+                                                <img src="assets/img/icons/location.png" alt="location">
+                                                <p>
+                                                    <span>
+                                            United Kingdom<br>
+                                            189 Foundry Lane<br>
+                                            Southampton SO153JZ</span>
+                                                </p>
+                                            </div>
+                                            <div class="f-icons-f pb-1">
+                                                <img src="assets/img/icons/phone-line.png" alt="phone-line">
+                                                <p>
+                                                    <a href="tel:+44 (0) 238 052 8262">+44 (0) 238 052 8262</a><br>
+                                                </p>
+                                            </div>
+                                            <div class="f-icons-f">
+                                                <img src="assets/img/icons/phone-line.png" alt="phone-line">
+                                                <p>
+                                                    <a href="tel:+44 (0) 238 052 8262">+44 (0) 238 052 8262</a><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subscribes-f">
+                                    <h4 class="s-sub-heading text-start pt-2 pb-3">
+                                        <span class="s-sub-c">Subscribe Us</span>
+                                    </h4>
+                                    <form class="subs-d">
+                                        <input name="email" class="form-control" type="email" autocorrect="off" autocapitalize="off" placeholder="Enter Your Email">
+                                        <button type="submit" class="cmn-btn-blue btn-green">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center">
+                    <p>Copyright 2021 <i class="fas fa-copyright"></i> <a href="index.html">Timerni.com</a> All Rights Reserved
+                    </p>
+                </div>
+            </div>
+            <div class="f-bottom-img">
+                <img src="assets/img/footer-bg.png" alt="footer" loading="lazy">
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!--=== All Plugin ===-->
+    <!--============= Jquery-3.6.0 =============-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!--=== Popper  v2.9.2 js ===-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--=== Bootstrap 5 js ===-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--=== owl carousel ===-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--=== magnific-popup ===-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--=== Main js ===-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,627 @@
+/* css variables */
+
+.mission .card_s>p i {
+    color: var(--s-green-color);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.mission .card_s {
+    margin-top: 30px;
+}
+
+.mission .dots-img {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.mission .left-vect {
+    display: inline-block;
+    position: absolute;
+}
+
+.mission .right-vect {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+
+.mission .left-vect>.vector-2 {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.mission .right-vect>.vector-6 {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+/*
+==========================================
+   05. focus CSS
+==========================================
+*/
+
+.focus-items {
+    position: relative;
+    text-align: end;
+    display: inline-block;
+}
+
+.focus-slider.owl-carousel .owl-item img {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.focus-slider .owl-dots {
+    text-align: center;
+}
+
+.focus-items>.focus-popup {
+    position: relative;
+    margin-right: -5%;
+    margin-top: -30%;
+    display: inline-block;
+}
+
+.focus-slider.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: rgba(229, 229, 229, 0.3);
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 50%;
+    background: rgba(49, 39, 131, 0.3);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.focus-slider.owl-theme .owl-dots .owl-dot.active span,
+.focus-slider.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--s-primary-color);
+}
+
+
+/*
+==========================================
+   06. service CSS
+==========================================
+*/
+
+.service .dots-img {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.service-item.active,
+.service-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.service-item .service-content {
+    height: 100%;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    padding: 20px 15px;
+    flex-direction: column;
+}
+
+.service-item .service-content>.c-title {
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    z-index: 2;
+    position: relative;
+}
+
+.service-item.active .overlay1::after,
+.service-item:hover .overlay1::after {
+    opacity: 1;
+    z-index: 1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/*
+
+==========================================
+   07. prjocect CSS
+==========================================
+*/
+
+.project-item.active.overlay3:after,
+.project-item.active .overlay-content,
+.project-item:hover.overlay3:after,
+.project-item:hover>.overlay-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* .project-item:hover>.overlay-content {
+    z-index: 5;
+} */
+
+
+/*
+==========================================
+   08. collabrator CSS
+==========================================
+*/
+
+.collaborator-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
+    top: 20%;
+    color: var(--s-primary-color);
+    background-color: var(--white);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.collaborator-slider.com-slider .owl-nav button.owl-next {
+    right: -5.5%;
+}
+
+.collaborator-slider.com-slider .owl-nav button.owl-prev {
+    left: -5.5%;
+}
+
+
+/*
+==========================================
+   09. team member CSS
+==========================================
+*/
+
+.team-member .team-select {
+    background-color: var(--s-primary-color);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.team-wrapper .team-member-service {
+    padding: 25px;
+}
+
+.team-member-service .facebook {
+    color: #3b5998
+}
+
+.team-member-service .google {
+    color: #dc4e41
+}
+
+.team-member-service .linkedin {
+    color: #0077b5
+}
+
+.team-member-service .twitter {
+    color: #55acee
+}
+
+.done-btn {
+    background: rgba(49, 39, 131, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    border: transparent;
+}
+
+
+/*
+==========================================
+   10. news CSS
+==========================================
+*/
+
+.news-bg {
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    padding: 80px 0px;
+}
+
+
+/* .news-bg .heading {
+    display: inline-block;
+} */
+
+.news-bg .heading .s-heading {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.news-bg .heading .s-sub-heading {
+    color: var(--white);
+}
+
+.news .news-content {
+    padding: 30px 40px;
+    max-width: 355px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-top: -100px;
+    position: relative;
+    z-index: 55;
+}
+
+.news .news-content .text-truncate {
+    white-space: normal;
+}
+
+.news-items {
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-wrapper-cont {
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.news .news-content .icons-r {
+    top: -45px;
+}
+
+
+/* .news-items:hover {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+} */
+
+.news-items.active .action-btn,
+.news-items:hover .action-btn {
+    opacity: 1;
+    margin-top: -35px;
+    transition: .4s cubic-bezier(.87, -.41, .19, 1.44);
+    transition-delay: .1s;
+}
+
+.news-items.active .bg-overlay,
+.news-items:hover .bg-overlay {
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transform: scale(10) translateZ(0);
+}
+
+.news-items.active .c-title,
+.news-items:hover .c-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    color: var(--s-green-color);
+}
+
+
+/*
+==========================================
+   11. testimonial CSS
+==========================================
+*/
+
+.testimonial .owl-item {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.testimonial .owl-item.active {
+    opacity: 1;
+}
+
+
+/* .collaborator-content .com-f > .c-title{
+    color: var(--paragraph-color);
+}
+.collaborator-content .com-f > p{
+    color: #5F5757;
+} */
+
+.testimonial-c>p {
+    padding: 15px 0px;
+}
+
+.testimonial>.overlay::after {
+    width: 53%;
+    right: 0;
+    left: auto;
+}
+
+.testimonial .testimonial-slider.owl-carousel {
+    width: 55%;
+    z-index: 1;
+    position: absolute;
+    top: 0rem;
+    height: 100%;
+    transform: translateY(15%);
+    right: 2%;
+    -webkit-transform: translateY(15%);
+    -moz-transform: translateY(15%);
+    -ms-transform: translateY(15%);
+    -o-transform: translateY(15%);
+}
+
+.testimonial .testimonial-slider.owl-carousel .profile-img>img {
+    max-width: 80px;
+}
+
+.testimonial-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
+    top: 55%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    color: var(--s-primary-color);
+}
+
+.testimonial-slider.com-slider .owl-nav button.owl-next {
+    right: auto;
+    left: calc(-42% - -8px);
+}
+
+.testimonial-slider.com-slider .owl-nav button.owl-prev {
+    right: auto;
+    left: -50%;
+}
+
+
+/*
+==========================================
+   12. faq CSS
+==========================================
+*/
+
+.faq .accordion-button {
+    background: #F8F8F8;
+    color: var(--paragraph-color);
+}
+
+.faq .accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+    /* background-image: url(../img/icons/minus.png); */
+    background-image: none;
+    transform: rotate(0deg);
+    content: "\f068";
+    color: var(--s-primary-color);
+}
+
+.faq .accordion-button::after {
+    display: flex;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    background-image: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+    color: var(--s-primary-color);
+    background-color: #F8F8F8;
+    box-shadow: none;
+    /* box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%); */
+}
+
+.faq .accordion-item {
+    border: none;
+    background-color: #F8F8F8;
+    margin-bottom: 20px;
+    padding: 8px 66px;
+}
+
+
+/* .faq .accordion-item .accordion-header {
+    margin-bottom: 20px;
+} */
+
+
+/*
+==========================================
+   14. contact CSS
+==========================================
+*/
+
+.contact .con-contetnt h4 {
+    color: red;
+    padding-top: 15px;
+}
+
+.contact .contact-form {
+    background: var(--s-primary-color);
+    padding: 35px 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact .contact-form label {
+    margin-bottom: 0px;
+}
+
+.contact .contact-form label span {
+    color: red;
+    font-size: 18px;
+}
+
+.contact-form [class*=col-] {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border: none;
+}
+
+
+/*
+==========================================
+   15. sign CSS
+==========================================
+*/
+
+.social-login .f-s-icon>a {
+    display: inline-block;
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.social-login .f-s-icon>.so-f {
+    background: #2F80EC;
+}
+
+.social-login .f-s-icon>.so-t {
+    background: #61CFF3;
+}
+
+.social-login .f-s-icon>.so-l {
+    background: #2D9CDB;
+}
+
+.social-login .f-s-icon>.so-i {
+    background: #2D9CDB;
+}
+
+.social-login .f-s-icon>.so-g {
+    background: #E9455A;
+}
+
+.terms {
+    display: block;
+    margin-top: 15px;
+}
+
+.terms input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.terms label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    line-height: 23px;
+    color: var(--gray);
+}
+
+.terms label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--s-green-color);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+    padding: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-right: 8px;
+    margin-top: 0px;
+}
+
+.terms input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--s-green-color);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.contact-form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.show-p .fa-eye {
+    float: right;
+    margin-right: 15px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Modal */
+
+.modal-form .con-contetnt h4 {
+    color: red;
+    padding-top: 15px;
+}
+
+.modal-form .contact-form {
+    background: var(--s-primary-color);
+    padding: 25px 20px;
+}
+
+.modal-form .contact-form label {
+    margin-bottom: 0px;
+}
+
+.modal-form .contact-form label span {
+    color: red;
+    font-size: 18px;
+}
+
+.modal-form .contact-form .form-control {
+    border: none;
+}
+
+.modal-form .contact-form [class*=col-] {
+    margin-bottom: 10px;
+}
+
+.modal-form .modal-content {
+    padding: 0px;
+}

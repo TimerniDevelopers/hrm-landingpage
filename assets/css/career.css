@@ -1,0 +1,143 @@
+.ambassador-img {
+    position: relative;
+    display: inline-block;
+    padding: 50px 0px;
+}
+
+.ambassador-l-o::before,
+.ambassador-r-o::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: var(--s-primary-color);
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.ambassador-l-o::before {
+    left: -80%;
+}
+
+.ambassador-r-o::after {
+    right: -80%;
+}
+
+.apply-items {
+    position: relative;
+    cursor: pointer;
+}
+
+.apply-items.active {
+    position: relative;
+    z-index: 9;
+}
+
+.apply-content {
+    background: rgba(255, 255, 255, 1);
+    padding: 25px 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    position: relative;
+    transform: scale(1.2);
+    margin-top: 50px;
+    display: none;
+}
+
+.apply-items.active .apply-content {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.apply-items .item-h img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.apply-items.active .item-h img {
+    transform: scale(1.2);
+}
+
+.item-h {
+    position: relative;
+}
+
+.apply-items.active .overlay1::after {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+
+
+/* .reward */
+
+.reward>img {
+    width: 100%;
+}
+
+.reward-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* cv clinic */
+
+.cv-clinic-content li {
+    margin-bottom: 20px;
+}
+
+.cv-clinic-content li>h3 {
+    float: left;
+    margin-right: 20px;
+    margin-top: -15px;
+}
+
+.cv-clinic-content li strong {
+    font-size: 30px;
+}
+
+.cv-clinic-content li p {
+    overflow: hidden;
+}
+.cv-btn .com-bor-btn:hover {
+    color: var(--s-primary-color);
+}
+
+
+/* job */
+
+.common-overly.overlay::after {
+    z-index: 1;
+}
+
+.job-select a.flag-logo {
+    color: var(--s-primary-color);
+}
+
+.current-job-item .box_shadow {
+    padding: 20px 15px;
+}
+
+.current-job-item {
+    text-align: center;
+}
+
+.current-job-item .job-item-content {
+    padding-top: 15px;
+}
+
+
+/* .current-job {
+    background-color: #E5E5E5;
+} */
